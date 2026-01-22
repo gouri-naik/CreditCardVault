@@ -12,8 +12,7 @@ By putting in place several security layers, such as IAM-based access control, t
 logging via AWS CloudTrail, and the least privilege principle, the architecture guarantees com-
 pliance with Payment Card Industry Data Security Standard (PCI DSS) regulations. The system
 accepts credit card data through a secure REST API, encrypts it using envelope encryption where
-Data Encryption Keys (DEKs) are themselves encrypted by Key Encryption Keys (KEKs) man-
-aged in AWS KMS, and stores only the token-to-encrypted-data mappings. Secure decryption is
+Data Encryption Keys (DEKs) are themselves encrypted by Key Encryption Keys (KEKs) managed in AWS KMS, and stores only the token-to-encrypted-data mappings. Secure decryption is
 carried out by authorized retrieval operations following appropriate authorization and authentica-
 tion checks.
 
